@@ -3,10 +3,11 @@ import cors from "cors";
 
 // import dotenv and load environment variables from .env
 
-
+import dotenv  from "dotenv";
 import { connectDB } from "./db.js";
 import { Song } from "./models/song.model.js";
 
+dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5174;
 
